@@ -70,6 +70,7 @@ void ProcessCtrl::schedule(std::vector<PCB>& tl, int& complete_cnt, int cnt, boo
                 printProcessInfo(tl, cnt);
                 heap.pop();
             } else {
+                current_task->priority ++;
                 if (heap.top()->priority < current_task->priority) {        // 抢占开始
                     current_task->status = WAIT;
                     heap.push(current_task);
