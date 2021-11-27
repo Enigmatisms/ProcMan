@@ -1,0 +1,7 @@
+arrive_ddl: 10        # 10
+min_life_period: 2    # 2
+max_life_period: 7    # 7
+max_level: 3          # 1
+process_number: 5     # 6
+use_fifo: 0
+fixed_seed: 1
